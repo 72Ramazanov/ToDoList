@@ -1,0 +1,15 @@
+@if (errorMessage) {
+  <div>{{ errorMessage }}</div>
+}
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h3>Регистрация</h3>
+
+  <label for="username">Username</label>
+  <input type="text" placeholder="Email" formControlName="email" />
+
+  <label for="password">Password</label>
+  <p-password [toggleMask]="true" type="password" placeholder="Password" formControlName="password" class="ppp" />
+
+  <button style="color: black;" type="submit">Войти</button>
+</form>

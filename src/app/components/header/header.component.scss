@@ -1,0 +1,49 @@
+//HEADER
+
+.header{
+    background-color: #e0e0e0;
+    max-width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    margin: 5px;
+
+    padding: 10px; /* Внутренний отступ */
+}
+
+.header-btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта */
+    border-radius: 35px;
+    font-weight: 700;
+    
+}
+.login{
+  background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px; /* Внутренние отступы кнопки */
+    font-size: 16px; /* Размер шрифта */
+    border-radius: 35px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+.login-header{
+  display: flex;
+  justify-content: space-between;
+}
+  
+  .header-add {
+    
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: space-between; /* Размещаем элементы по краям */
+    align-items: center; /* Центрируем элементы по вертикали */
+  }
+
+
+  .example-spacer {
+    flex-grow: 1; /* Пространство между кнопками */
+  }

@@ -1,0 +1,56 @@
+<!-- 
+@if (authService.currentUserSig() === null) {
+  <div>
+    <a routerLink="/login">Login</a>
+    <a routerLink="/register">Register</a>
+  </div>
+  } @if (authService.currentUserSig()) {
+  <div>
+    {{ authService.currentUserSig()?.email }}
+    <span (click)="logout()">Logout</span>
+  </div>
+  } -->
+
+<app-header></app-header>
+
+
+
+<div>
+  @for (todo of todoList; track $index) {
+  <div class="container">
+    <div class="todo-container">
+      <div class="todo-header">
+        <span class="todo-date">{{
+          todo.createdAt | date : "MMM d, y, h:mm a"
+        }}</span>
+      </div>
+  
+      <div class="content-container">
+        <div class="todo-text">
+          <p class="todo-p">{{ todo.text }}</p>
+        </div>
+        @if(todo.urlImg) {
+  
+        <img
+          [src]="todo.urlImg"
+          alt="Загруженная фотография"
+          class="todo-image"
+        />
+        }
+      </div>
+  
+      <div class="btn-container">
+        <button class="btn-icon" (click)="editTodo(todo)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button class="btn-icon" (click)="deleteTodo(todo)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  }
+</div>
+
+

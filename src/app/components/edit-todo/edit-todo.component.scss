@@ -1,0 +1,139 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  height: 100vh;          
+  padding: 20px;          
+  box-sizing: border-box;
+}
+
+.edit-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;       
+  width: 100%;            
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.edit-text {
+  width: 100%;            
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+}
+
+.custom-file-upload {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column; 
+}
+
+.custom-file-upload label {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  cursor: pointer;
+    display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 35px;
+  font-weight: 600;
+  
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.edit-img {
+  margin-top: 20px;
+}
+
+.edit-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-edit {
+
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-left: 5px;
+  display: inline-block;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 35px;
+  font-weight: 800;
+}
+
+.btn-edit:not(:first-child) {
+  margin-left: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end; /* Выравнивание кнопок слева */
+  margin-top: 20px;
+}
+
+.edit-text {
+  min-height: 100px;
+}
+
+.edit-img {
+  border-radius: 8px;
+  margin: 10px;
+  position: relative;
+  background-color: white;
+  width: 545px;
+  height: 340px;
+  text-align: center;
+  left: 0px;
+}
+
+.img{
+  width: 500px;   
+}
+
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .edit-container {
+    padding: 15px;
+  }
+
+  .btn-edit {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}

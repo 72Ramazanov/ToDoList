@@ -1,0 +1,106 @@
+.container {
+  position: relative;
+  background-color: #ffffff; /* Цвет фона контейнера */
+  padding: 15px;
+  max-width: 1400px;
+  min-height: 280px;
+  margin: 20px auto;
+}
+
+.todo-container{
+  border-radius: 20px;
+}
+  
+  .todo-header {
+    margin-bottom: 10px;
+  }
+  
+  .todo-date {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5; /* Цвет фона текста и изображения */
+    padding: 10px;
+    border-radius: 15px;
+    max-height: 700px;
+  }
+  
+  .todo-text {
+    font-style: italic;       
+    font-weight: bold;        
+    text-decoration: underline;
+    font-size: 25px;
+    min-height: 200px;
+    max-width: 1345px;
+    position: relative;
+    
+    flex: 2;
+    background-color: #fdfdfd; /* Цвет фона текста */
+    padding: 15px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    word-break: break-word;   /* Перенос текста на новые строки */
+    white-space: normal; 
+    
+  }
+  
+  .todo-image {
+    flex: 1;
+    background-color: #fdfdfd; /* Цвет фона изображения */
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    max-height: 200px;
+    margin-left: 20px;
+  }
+  
+  .todo-p {
+    position: relative;
+}
+
+.btn-icon {
+    background-color: #8f0f0f00;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.btn-container{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+
+
+
+.loading-anchor {
+  height: 50px;
+}
+
+.todo-container {
+  margin-bottom: 15px;
+}
+
+
+
+.todo-container {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.loading-anchor {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}

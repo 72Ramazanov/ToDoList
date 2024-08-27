@@ -1,0 +1,44 @@
+
+  <div class="container">
+    <div>
+        <div class="edit-container">
+            <p style="font-weight: 500; font-size: 30px;">Добавление записи</p>
+        
+              <textarea
+              class="edit-text"
+                pInputTextarea
+                [autoResize]="true"
+                [(ngModel)]="newTodoText"
+              ></textarea>
+            
+          
+            <label>
+              <div>
+                <div class="custom-file-upload ">
+                  <label for="file-upload">Выберите файл</label>
+                  <input id="file-upload" type="file" (change)="onFileSelected($event)" accept="image/*" />
+                </div>
+                </div>
+            </label>
+            <div class="edit-img">
+              <p style="font-weight: 500; font-size: 25px;"> Предварительный просмотр:</p>
+              @if (newTodoImage) {
+                <img
+                [src]="newTodoImage"
+                alt="Image preview"
+                class="img"
+              />
+              }
+             
+            </div>
+          
+          <div class="btn-container">
+            <button class="btn-edit" (click)="addTodo()" routerLink="/">Сохранить</button>
+            <button class="btn-edit" (click)="cancel()" routerLink="/">Отмена</button>
+          </div>
+        </div>
+
+      
+    </div>
+    
+  </div>

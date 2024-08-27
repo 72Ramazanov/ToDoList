@@ -1,0 +1,36 @@
+<div  class="header">  
+    <div class="header-add">   
+     
+      <div>
+        <button class="header-btn"  routerLink="/add">Создать</button>
+      </div>
+      <span class="example-spacer"></span>
+      <div>
+        @if (authService.currentUserSig() === null) {
+          <div>
+            <button class="header-btn" routerLink="/login">Войти </button>
+            <button style="margin-left: 5px;" class="header-btn" routerLink="/register">Зарегистрироваться</button>
+          </div>
+          } @if (authService.currentUserSig()) {
+          <div class="login-header">
+            <div class="login"> {{ authService.currentUserSig()?.email }}</div>
+           
+            <button class="header-btn" (click)="logout()">Выйти</button>
+            <!-- <span (click)="logout()">Logout</span> -->
+          </div>
+          }
+        
+      </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
